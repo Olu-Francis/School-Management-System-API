@@ -13,7 +13,7 @@ A RESTful API for managing school resources including teachers, students, and cl
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.10+
 - pip (Python package manager)
 - SQLite (included with Python)
 
@@ -22,7 +22,7 @@ A RESTful API for managing school resources including teachers, students, and cl
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:Olu-Francis/School-Management-System-API.git
 cd school_project
 ```
 
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-### 5. Create Superuser (Optional)
+### 5. Create Superuser 
 
 ```bash
 python manage.py createsuperuser
@@ -85,7 +85,7 @@ http://127.0.0.1:8000/api/
 ```
 
 ### Authentication
-Currently, the API is open without authentication. For production, consider adding authentication.
+To access you need to login as a superuser or given permission from a superuser
 
 ### Endpoints
 
@@ -106,7 +106,7 @@ Content-Type: application/json
     "name": "Jane Smith",
     "subject": "Physics",
     "email": "jane@example.com",
-    "phone": "123-456-7890"
+    "phone": "1234567890"
 }
 ```
 
@@ -164,21 +164,11 @@ Content-Type: application/json
 
 ### Running Tests
 
-To run the test suite, use one of the following commands:
+To run the test suite, use one of the following commands in the project directory:
 
 1. Run all tests in the core app:
    ```bash
-   python -m pytest core/tests/
-   ```
-
-2. Run a specific test file:
-   ```bash
-   python -m pytest core/tests/test_api.py -v
-   ```
-
-3. Run a specific test class or method:
-   ```bash
-   python -m pytest core/tests/test_api.py::SchoolAPITest::test_create_teacher -v
+   python manage.py test core.tests
    ```
 
 ### Test Coverage
@@ -189,12 +179,6 @@ To check test coverage:
    ```bash
    pip install pytest-cov
    ```
-
-2. Run tests with coverage:
-   ```bash
-   python -m pytest --cov=core --cov-report=html core/tests/
-   ```
-   This will generate an HTML report in the `htmlcov` directory.
 
 ### Common Test Issues
 
@@ -210,7 +194,7 @@ If you encounter import errors when running tests, try:
 To run the test suite, use:
 
 ```bash
-python manage.py test core.tests.test_api -v 2
+python manage.py test core.tests.test_views -v 2
 ```
 
 This will run all the test cases and show detailed output.
@@ -233,36 +217,6 @@ For production deployment, consider:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## API Response Format
-
-All API responses follow this format:
-
-```json
-{
-    "id": 1,
-    "name": "Resource Name",
-    // ... other fields
-}
-```
-
-Error responses:
-
-```json
-{
-    "error": "Error message",
-    "details": {
-        // Additional error details if available
-    }
-}
-```
-
-## Rate Limiting
-
-API is currently not rate limited. For production, consider implementing rate limiting.
 
 ## Support
 

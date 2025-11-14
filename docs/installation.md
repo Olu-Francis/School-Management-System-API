@@ -4,7 +4,7 @@ This guide will help you set up the School Management System API on your local m
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 - pip (Python package manager)
 - PostgreSQL (recommended) or SQLite
 - Git (for version control)
@@ -14,8 +14,8 @@ This guide will help you set up the School Management System API on your local m
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/school-management-api.git
-cd school-management-api
+git clone git@github.com:Olu-Francis/School-Management-System-API.git
+cd school_project
 ```
 
 ### 2. Create and Activate Virtual Environment

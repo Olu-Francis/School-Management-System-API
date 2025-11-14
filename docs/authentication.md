@@ -1,6 +1,6 @@
 # Authentication
 
-This API uses JSON Web Tokens (JWT) for authentication. JWT is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.
+This API uses JSON Web Tokens (JWT) for authentication. 
 
 ## How JWT Authentication Works
 
@@ -27,8 +27,8 @@ Content-Type: application/json
 
 ```json
 {
-    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+    "refresh": "IUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "access": "IUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
 ```
 
