@@ -75,13 +75,21 @@ The API will be available at `http://127.0.0.1:8000/api/`
 
 You can use tools like `curl`, Postman, or the browsable API interface to interact with the API endpoints.
 
-The API will be available at `http://127.0.0.1:8000/`
+You can login as admin before checking the `/api/` endpoint 
+
+Use this `http://127.0.0.1:8000/admin/` to login to the admin with the credentials used when creating a superuser 
+
 
 ## API Documentation
 
 ### Base URL
 ```
 http://127.0.0.1:8000/api/
+```
+
+### Admin URL
+```
+http://127.0.0.1:8000/admin/
 ```
 
 ### Authentication

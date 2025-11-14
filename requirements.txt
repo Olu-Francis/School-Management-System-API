@@ -1,25 +1,24 @@
 # Core
-Django==5.0.0
-djangorestframework==3.15.0
-djangorestframework-simplejwt==5.3.1
+Django==5.2.8
+djangorestframework==3.16.1
+djangorestframework_simplejwt==5.5.1
 
 # Database
-psycopg2-binary==2.9.9  # PostgreSQL adapter
+psycopg2-binary==2.9.11  # PostgreSQL adapter
 
 # Environment & Configuration
-django-environ==1.0.0
+django-environ==0.12.0
 
 # API Documentation
-drf-yasg==1.21.7
-django-filter==23.5
+drf-yasg==1.21.11
+django-filter==25.2
 
-# Development (optional)
-# pytest==8.0.0
-# pytest-django==4.7.0
-# factory-boy==3.3.0
-# python-dotenv==1.0.0
-# pytest==8.0.0
-# pytest-django==4.7.0
-# pytest-cov==4.1.0
-# coverage==7.2.2
-# factory-boy==3.3.0
+# Development
+asgiref==3.10.0
+inflection==0.5.1
+packaging==25.0
+PyJWT==2.10.1
+pytz==2025.2
+PyYAML==6.0.3
+sqlparse==0.5.3
+uritemplate==4.2.0
