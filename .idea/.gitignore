@@ -1,0 +1,100 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Datasource local storage
+/dataSources/
+/dataSources.local.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Datasource local storage
+/dataSources/
+/dataSources.local.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# PyCharm
+.idea/
+.idea/*.xml
+.idea/*.iml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/
+.idea/workspace.xml
+.idea/misc.xml
+.idea/shelf/
+.idea/libraries/
+.idea/artifacts/
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/modules/
+.idea/scopes/
+.idea/sonarlint/
+.idea/sonarlint-security-events.xml
+.idea/runConfigurations/
+.idea/runConfigurations/
+.idea/sonarlint-security-events.xml
+.idea/inspectionProfiles/
+.idea/dictionaries/
+.idea/runConfigurations/
+.idea/shelf/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.vscode/
+.history/
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database
+*.sqlite3
+*.db
+*.sql
+
+# Logs
+*.log
+
+# Local development
+local_settings.py
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
