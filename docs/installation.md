@@ -13,11 +13,6 @@ This guide will help you set up the School Management System API on your local m
 
 ### 1. Clone the Repository
 
-```bash
-git clone git@github.com:Olu-Francis/School-Management-System-API.git
-cd school_project
-```
-
 ### 2. Create and Activate Virtual Environment
 
 #### Linux/macOS

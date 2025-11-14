@@ -21,12 +21,12 @@ A RESTful API for managing school resources including teachers, students, and cl
 
 ### 1. Clone the Repository
 
-```bash
-git clone git@github.com:Olu-Francis/School-Management-System-API.git
-cd school_project
-```
-
 ### 2. Set Up Environment Variables
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
 
 Create a `.env` file in the project root with the following content:
 
@@ -86,6 +86,31 @@ http://127.0.0.1:8000/api/
 
 ### Authentication
 To access you need to login as a superuser or given permission from a superuser
+
+# Authentication
+
+This API uses JSON Web Tokens (JWT) for authentication. 
+
+## How JWT Authentication Works
+
+1. Client sends credentials (username/password) to the `/api/token/` endpoint or use the login form provided
+2. Server validates credentials and returns an access token and refresh token
+3. Client includes the access token in the `Authorization` header for subsequent requests
+4. When the access token expires, the client can use the refresh token to get a new access token
+
+## Obtaining Tokens
+
+### Request Access Token
+
+```http
+POST /api/token/
+Content-Type: application/json
+
+{
+    "username": "your_username",
+    "password": "your_password"
+}
+```
 
 ### Endpoints
 
